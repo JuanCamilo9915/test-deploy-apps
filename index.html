@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Proyecto Final de Crehana</title>
+    <!-------------Importando Estilos------------->
+    <link rel='stylesheet' href='./styles/style-index.css'>
+</head>
+
+<body>
+    <!--------------------------------------------------Header-------------------------------------------------->
+    <header>
+        <div class="title">
+            <h1>Gestión de Gastos Personales</h1>
+        </div>
+    </header>
+    <!--------------------------------------------------Main-------------------------------------------------->
+    <main>
+        <!--Captura de Datos--->
+        <section class="set-datos">
+
+            <!--Campos de Texto--->
+            <div class="set-datos-campos-texto">
+
+                <label for="uno" class="eti-campos" id="eti-1">Detalle</label>
+                <input type="text" id="uno" name="detalle" placeholder="Detalle">
+
+                <select name="option" id="dos">
+                    <option value="0">Seleccione el Tipo</option>
+                    <option value="1">1-Ingreso</option>
+                    <option value="2">2-Gasto</option>
+                </select>
+
+                <label for="tres" class="eti-campos" id="eti-3">Valor</label>
+                <input type="text" id="tres" name="valor" placeholder="$$$">
+
+            </div>
+
+            <!--Btn--->
+            <div class="set-datos-btn">
+                <button id="btn-submit">Registrar</button>
+            </div>
+
+        </section>
+
+        <!--Tabla de Visualización de los Datos--->
+        <section class="get-datos">
+
+            <!--Mostrando Datos-->
+            <table id="get-table">
+                <thead>
+                    <th>N°</th>
+                    <th>Detalle</th>
+                    <th>Tipo</th>
+                    <th>Valor($)</th>
+                </thead>
+
+                <tbody></tbody>
+            </table>
+
+            <!--Tabla del Total de Ingresos Netos-->
+            <table id="get-table-2">
+                <thead>
+                    <th>Total Ingresos</th>
+                    <th>Total Gastos</th>
+                    <th>Total Ingresos Netos</th>
+                </thead>
+
+                <tbody></tbody>
+            </table>
+
+        </section>
+
+    </main>
+    <!--------------------------------------------------Footer-------------------------------------------------->
+    <footer>
+        <p>Copyright &copy JuanCamiloDev 2021</p>
+    </footer>
+    <!---------------------------------------------------------------------------------------------------------->
+
+    <!-------------Importando Librería SystemJS (V. 6.11.0)------------------->
+    <script src='node_modules/systemjs/dist/system.js'></script>
+    <script type="systemjs-importmap">
+        {
+          "imports": {
+            "app": "./js/recibirDatos.js"
+          }
+        }
+    </script>
+    <!-- Alternatively:--->
+    <script type="systemjs-module" src="import:app"></script>
+    <!--
+    <script>
+        System.config({
+            packages: {
+                app: {
+                    defaultExtension: 'js',
+                    format: 'register'
+                }
+            }
+        });
+    </script>-->
+
+    <!------------------------------------------------------------------->
+
+    <!-------------Importando Código JS------------
+    <script src="./js/recibirDatos.js"></script>---->
+    <!------------------------------------------------------------------->
+</body>
+
+</html>
