@@ -1,1 +1,1 @@
-(()=>{"use strict";alert("Hellow World typescript and webpack")})();
+(()=>{"use strict";console.log("Hellow World typescript and webpack"),alert("Hellow World typescript and webpack")})();
