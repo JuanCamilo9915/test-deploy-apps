@@ -1,0 +1,160 @@
+*{
+    margin: 0%;
+	padding: 0%;
+	/*list-style: none;
+	text-decoration: none;*/
+	box-sizing: border-box;
+	font-family: 'Times New Roman';
+    text-align: center;
+}
+
+header{
+    width: 100vw;
+    height: 15vh;
+}
+
+.title{
+    width: 100%;
+    height: 100%;
+    position: relative;
+}
+
+.title > h1{
+    position: absolute;
+    top: 30%;
+    left: 0%;
+    right: 0%;
+    bottom: 0%;
+    margin: auto;
+    font-size: 250%;
+}
+
+/*-------------------------Cuerpo-------------------------*/
+main{
+    width: 100vw;
+    height: 70vh;
+    /*background-color: skyblue;*/
+}
+
+.set-datos{
+    width: inherit;
+    height: 25vh;/*Corresponde a una parte del alto del main (70vh)*/
+}
+
+.set-datos-campos-texto, .set-datos-btn{
+    width: inherit;
+    height: 50%;
+    position: relative;
+}
+
+/*Etiquetas y el checkbox*/
+.eti-campos, #dos{
+    font-size: 150%;
+}
+
+#eti-1{
+    position: absolute;
+    top: 10%;
+    left: 12%;
+}
+
+#uno{
+    position: absolute;
+    left: 10%;
+    bottom: 20%;
+}
+
+#dos{
+    position: absolute;
+    left: 43%;
+    bottom: 20%;
+}
+
+#eti-3{
+    position: absolute;
+    top: 10%;
+    right: 30%;
+}
+
+#tres{
+    position: absolute;
+    right: 10%;
+    bottom: 20%;
+}
+
+/*Campos de texto*/
+#uno, #tres{
+    width: 25%;
+    height: 35%;
+    font-size: 150%;
+}
+
+/*Btn*/
+.set-datos-btn > button{
+    width: 15%;
+    height: 40%;
+    position: absolute;
+    top: 0%;
+    left: 0%;
+    right: 0%;
+    bottom: 0%;
+    margin: auto;
+    font-size: 150%;
+}
+
+#form-gastos-personales{
+    width: inherit;
+    height: inherit;
+}
+
+/*Muestran Datos en la Tabla*/
+.get-datos{
+    width: inherit;
+    height: 45vh;/*Corresponde a una parte del alto del main (70vh)*/
+    position: relative;
+    overflow: auto;
+}
+
+#get-table{
+    position: absolute;
+    top: 10%;    
+    left: 0%;
+    right: 50%;
+    bottom: 0%;
+    margin: auto;
+    font-size: 150%;
+}
+
+table, th, td{
+    width: 30%;
+    border: 1px solid;
+}
+
+/*Tabla # 2*/
+#get-table-2{
+    position: absolute;
+    top: 10%;    
+    left: 50%;
+    right: 0%;
+    bottom: 0%;
+    margin: auto;
+    font-size: 150%;
+}
+
+footer{
+    width: 100vw;
+    height: 15vh;
+    position: relative;
+    /*background-color: burlywood;*/
+}
+
+/*-------------------------Pie de Página-------------------------*/
+footer > p{
+    position: absolute;
+    top: 30%;    
+    left: 0%;
+    right: 0%;
+    bottom: 0%;
+    margin: auto;
+    font-size: 150%;
+}
